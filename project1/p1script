@@ -1,0 +1,12 @@
+#!/bin/csh
+
+#number of nodes:
+echo "Results"
+echo
+echo "------------------------------------------------------------"
+foreach n ( 4 100 500 1000 2500 5000 7500 10000 )
+    #number of threads:
+    foreach t ( 1 2 3 4 5 6 )
+        ./project1 $n $t
+    end
+end

@@ -1,0 +1,5 @@
+To compile:
+make
+
+To run:
+./project1 <nodes> <threads>

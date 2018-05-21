@@ -1,0 +1,14 @@
+#!/bin/csh
+
+#number of nodes:
+echo "Results"
+echo
+echo "------------------------------------------------------------"
+
+#number of threads:
+foreach t ( 1 2 4 8 )
+    ./n_body_coarse_static $t
+    ./n_body_fine_static $t
+    ./n_body_coarse_dynamic $t
+    ./n_body_fine_dynamic $t
+end

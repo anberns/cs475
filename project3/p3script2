@@ -1,0 +1,13 @@
+#!/bin/csh
+
+#number of nodes:
+echo "Results"
+echo
+echo "------------------------------------------------------------"
+
+#number of threads:
+foreach t ( 8 )
+    echo NUMT = $t
+    gcc-7 -std=c99 -DNUMT=$t -o false_sharing2 false_sharing2.c -lm -fopenmp
+    ./false_sharing2
+end

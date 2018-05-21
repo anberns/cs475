@@ -1,0 +1,16 @@
+#!/bin/csh
+
+#number of nodes:
+echo "Results"
+echo
+echo "------------------------------------------------------------"
+
+#number of threads:
+foreach t ( 1 2 4 8 16 )
+    echo NUMT = $t
+    foreach p (1000 10000 100000 1000000 10000000)
+        echo NUMS = $p
+        icc -DNUMT=$t -DNUMS=$p -o alt alt.c -lm -fopenmp -no-vec
+        ./alt
+    end
+end

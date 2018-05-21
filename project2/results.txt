@@ -1,0 +1,19 @@
+Results
+
+------------------------------------------------------------
+Coarse / Static / 1 threads:   119.44
+Fine / Static / 1 threads:    77.97
+Coarse / Dynamic / 1 threads:   130.03
+Fine / Dynamic / 1 threads:    24.72
+Coarse / Static / 2 threads:   149.12
+Fine / Static / 2 threads:     5.29
+Coarse / Dynamic / 2 threads:   132.47
+Fine / Dynamic / 2 threads:     4.33
+Coarse / Static / 4 threads:   123.31
+Fine / Static / 4 threads:     3.11
+Coarse / Dynamic / 4 threads:   118.74
+Fine / Dynamic / 4 threads:     2.78
+Coarse / Static / 8 threads:   112.82
+Fine / Static / 8 threads:     1.74
+Coarse / Dynamic / 8 threads:    84.90
+Fine / Dynamic / 8 threads:     1.56
